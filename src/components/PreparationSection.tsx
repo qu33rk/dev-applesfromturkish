@@ -1,6 +1,6 @@
 export default function PreparationSection() {
   const features = [
-    { text: "Hand-selected from orchards in Isparta, Karaman and Niğde — regions known for ideal apple-growing conditions", icon: "🌿" },
+    { text: "Hand-selected from orchards in Isparta — a region known for ideal apple-growing conditions", icon: "🌿" },
     { text: "Thoroughly washed and sanitized in line with international food safety regulations", icon: "💧" },
     { text: "Sorted using optical technology that checks size, color and quality grade with precision", icon: "🔬" },
     { text: "Stored in temperature-controlled cold rooms to lock in freshness for months", icon: "❄️" },

@@ -41,9 +41,9 @@ export default function GlobalMarketsSection() {
                 <span className="text-5xl group-hover:scale-110 transition-transform duration-300">
                   {market.flag}
                 </span>
-                <h3 className="text-xl font-bold text-gray-900 group-hover:text-brand-green transition-colors duration-300">
+                <span className="text-xl font-bold text-gray-900 group-hover:text-brand-green transition-colors duration-300">
                   {market.name}
-                </h3>
+                </span>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">
                 {market.desc}

@@ -67,9 +67,9 @@ export default function ContactPage() {
             {/* Form — takes 3 columns */}
             <div className="lg:col-span-3">
               <div className="bg-white rounded-2xl border border-gray-100 p-8 shadow-sm">
-                <h2 className="text-xl font-bold text-gray-900 mb-6">
+                <span className="block text-xl font-bold text-gray-900 mb-6">
                   Request a Quote
-                </h2>
+                </span>
                 <form
                   onSubmit={handleSubmit}
                   className="grid grid-cols-1 sm:grid-cols-2 gap-5"
@@ -188,9 +188,9 @@ export default function ContactPage() {
             <div className="lg:col-span-2 space-y-6">
               {/* Office Card */}
               <div className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
-                <h3 className="text-lg font-bold text-gray-900 mb-4">
+                <span className="block text-lg font-bold text-gray-900 mb-4">
                   Our Office
-                </h3>
+                </span>
                 <ul className="space-y-4 text-sm">
                   <li className="flex items-start gap-3">
                     <span className="w-9 h-9 rounded-lg bg-brand-green-light flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -236,9 +236,9 @@ export default function ContactPage() {
 
               {/* Business Hours */}
               <div className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
-                <h3 className="text-lg font-bold text-gray-900 mb-4">
+                <span className="block text-lg font-bold text-gray-900 mb-4">
                   Business Hours
-                </h3>
+                </span>
                 <ul className="space-y-2 text-sm">
                   <li className="flex justify-between">
                     <span className="text-gray-500">Monday – Friday</span>

@@ -4,7 +4,7 @@ const steps = [
     title: "Collecting Apples",
     icon: "/zbieranie-jablek.svg",
     description:
-      "Handpicked at peak ripeness from Turkey's finest orchards in Isparta, Karaman, and Niğde regions.",
+      "Handpicked at peak ripeness from Turkey's finest orchards in the Isparta region.",
   },
   {
     number: 2,
@@ -48,9 +48,9 @@ export default function ProcessSection() {
                   {step.number}
                 </span>
 
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                <span className="block text-xl font-bold text-gray-900 mb-2">
                   {step.title}
-                </h3>
+                </span>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   {step.description}
                 </p>

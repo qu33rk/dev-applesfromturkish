@@ -1,5 +1,4 @@
 const quickLinks = [
-  { label: "About", href: "/about" },
   { label: "Apple Types", href: "/apple-types" },
   { label: "Contact", href: "/contact" },
   { label: "Privacy Policy", href: "/privacy-policy" },
@@ -34,9 +33,9 @@ export default function Footer() {
 
             {/* Quick Links */}
             <div>
-              <h4 className="font-semibold text-white mb-5 text-sm uppercase tracking-wider">
+              <span className="block font-semibold text-white mb-5 text-sm uppercase tracking-wider">
                 Quick Links
-              </h4>
+              </span>
               <ul className="space-y-3 text-sm">
                 {quickLinks.map((link) => (
                   <li key={link.href}>
@@ -54,9 +53,9 @@ export default function Footer() {
 
             {/* Contact Info */}
             <div>
-              <h4 className="font-semibold text-white mb-5 text-sm uppercase tracking-wider">
+              <span className="block font-semibold text-white mb-5 text-sm uppercase tracking-wider">
                 Contact
-              </h4>
+              </span>
               <ul className="space-y-4 text-sm">
                 <li className="flex items-center gap-3">
                   <span className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">

@@ -30,9 +30,9 @@ export default function ContactForm() {
         <div className="relative bg-white/80 backdrop-blur-xl rounded-3xl shadow-2xl shadow-black/5 p-8 sm:p-12 border border-white/50">
           {/* Header */}
           <div className="text-center mb-10">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
+            <span className="block text-3xl sm:text-4xl font-bold text-gray-900">
               Request a Quote
-            </h2>
+            </span>
             <p className="text-gray-600 mt-3 max-w-md mx-auto">
               Fill in the form and our team will contact you within 24 hours.
             </p>

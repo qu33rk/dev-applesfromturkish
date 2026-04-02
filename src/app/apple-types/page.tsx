@@ -5,7 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Apple Varieties — Red, Gala, Fuji, Golden & Granny Smith",
+  title: "Apple Types — Red, Gala, Fuji, Golden & Granny Smith",
   description:
     "Explore five premium Turkish apple varieties for export: Red, Gala, Fuji, Golden Delicious, and Granny Smith. Specs, seasons, packaging — everything wholesalers need to know.",
   alternates: {
@@ -37,7 +37,7 @@ const appleVarieties = [
     description:
       "Mildly sweet with a floral aroma. One of the world's most popular varieties for everyday consumption.",
     longDescription:
-      "Turkish Gala apples are renowned for their distinctive red-orange striped skin and honey-sweet flavor with hints of vanilla. Grown primarily in Isparta and Karaman regions, they offer excellent crunch and juiciness. Gala is one of the most commercially successful varieties worldwide, and our Turkish-grown Galas meet the highest international standards.",
+      "Turkish Gala apples are renowned for their distinctive red-orange striped skin and honey-sweet flavor with hints of vanilla. Grown in the Isparta region, they offer excellent crunch and juiciness. Gala is one of the most commercially successful varieties worldwide, and our Turkish-grown Galas meet the highest international standards.",
     images: ["/gala.webp"],
     color: "from-orange-50 to-amber-100/50",
     specs: {
@@ -116,7 +116,7 @@ const breadcrumbJsonLd = {
     {
       "@type": "ListItem",
       position: 2,
-      name: "Apple Varieties",
+      name: "Apple Types",
     },
   ],
 };
@@ -154,9 +154,9 @@ export default function AppleTypesPage() {
       <main className="pb-16">
         {/* Page Header */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
-          <Breadcrumbs items={[{ label: "Apple Varieties" }]} />
+          <Breadcrumbs items={[{ label: "Apple Types" }]} />
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-            Our Apple Varieties
+            Our Apple Types
           </h1>
           <p className="text-gray-600 text-lg max-w-2xl">
             We export five premium apple varieties from Turkey. Each is
@@ -201,9 +201,9 @@ export default function AppleTypesPage() {
                     {/* Specs Table */}
                     <div className="bg-white rounded-2xl border border-gray-100 overflow-hidden">
                       <div className="px-5 py-3 bg-brand-green-light">
-                        <h3 className="text-sm font-semibold text-brand-green uppercase tracking-wider">
+                        <span className="block text-sm font-semibold text-brand-green uppercase tracking-wider">
                           Specifications
-                        </h3>
+                        </span>
                       </div>
                       <div className="divide-y divide-gray-100">
                         {Object.entries(apple.specs).map(([key, value]) => (
