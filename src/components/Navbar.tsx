@@ -34,7 +34,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-18">
           {/* Logo */}
           <a href="/" className="group">
-            <img src="/apples-from-turkey-logo.png" alt="Apples from Turkey" className="h-16 object-contain" />
+            <img src="/apples-from-turkey-logo.webp" alt="Apples from Turkey" width={383} height={160} className="h-16 object-contain" />
           </a>
 
           {/* Desktop Links */}

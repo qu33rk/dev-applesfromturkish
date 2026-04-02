@@ -40,7 +40,7 @@ export default function HeroSection() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
           <a
             href="/contact"
-            className="bg-brand-green text-white font-semibold px-10 py-4 rounded-full text-lg shadow-xl shadow-brand-green/20 hover:bg-brand-green-dark transition-colors duration-300"
+            className="bg-brand-green-dark text-white font-semibold px-10 py-4 rounded-full text-lg shadow-xl shadow-brand-green/20 hover:bg-brand-green transition-colors duration-300"
           >
             Get a Quote
           </a>

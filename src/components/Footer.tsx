@@ -23,7 +23,7 @@ export default function Footer() {
             {/* Brand Column */}
             <div>
               <div className="mb-5">
-                <img src="/apples-from-turkey-logo.png" alt="Apples from Turkey" className="h-20 object-contain" />
+                <img src="/apples-from-turkey-logo.webp" alt="Apples from Turkey" width={383} height={160} className="h-20 object-contain" />
               </div>
               <p className="text-sm leading-relaxed text-white/70 mb-6">
                 Premium apple export company based in Turkey. Supplying the
