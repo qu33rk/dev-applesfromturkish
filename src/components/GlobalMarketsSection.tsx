@@ -52,6 +52,43 @@ export default function GlobalMarketsSection() {
           ))}
         </div>
 
+        {/* Stats Banner - overlapping on top */}
+        <div className="relative z-10 px-4 sm:px-8 -mb-10">
+          <div className="bg-white rounded-2xl shadow-xl py-8 px-6 sm:px-12 max-w-4xl mx-auto">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+              <div>
+                <div className="text-3xl sm:text-4xl font-bold text-emerald-500 mb-1">50+</div>
+                <div className="text-gray-600 text-sm">Countries</div>
+              </div>
+              <div>
+                <div className="text-3xl sm:text-4xl font-bold text-emerald-500 mb-1">100.000+</div>
+                <div className="text-gray-600 text-sm">Tons Annually</div>
+              </div>
+              <div>
+                <div className="text-3xl sm:text-4xl font-bold text-emerald-500 mb-1">10+</div>
+                <div className="text-gray-600 text-sm">Years Experience</div>
+              </div>
+              <div>
+                <div className="text-3xl sm:text-4xl font-bold text-emerald-500 mb-1">24/7</div>
+                <div className="text-gray-600 text-sm">Customer Support</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Background Image Section */}
+        <div className="relative rounded-3xl overflow-hidden">
+          {/* Background Image Container */}
+          <div className="relative h-[400px] sm:h-[500px]">
+            <div 
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+              style={{ backgroundImage: 'url(/Container-main.webp)' }}
+            />
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+          </div>
+        </div>
+
         {/* CTA */}
         <div className="text-center mt-12">
           <a

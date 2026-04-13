@@ -6,6 +6,7 @@ import PreparationSection from "@/components/PreparationSection";
 import ProcessSection from "@/components/ProcessSection";
 import GlobalMarketsSection from "@/components/GlobalMarketsSection";
 import CertificationsSection from "@/components/CertificationsSection";
+import PackagingSection from "@/components/PackagingSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
         <ProcessSection />
         <GlobalMarketsSection />
         <CertificationsSection />
+        <PackagingSection />
       </main>
       <Footer />
     </>

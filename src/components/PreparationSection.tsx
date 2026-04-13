@@ -1,87 +1,49 @@
 export default function PreparationSection() {
-  const features = [
-    { text: "Hand-selected from orchards in Isparta — a region known for ideal apple-growing conditions", icon: "🌿" },
-    { text: "Thoroughly washed and sanitized in line with international food safety regulations", icon: "💧" },
-    { text: "Sorted using optical technology that checks size, color and quality grade with precision", icon: "🔬" },
-    { text: "Stored in temperature-controlled cold rooms to lock in freshness for months", icon: "❄️" },
-    { text: "Packed in export-grade cartons configured to meet each destination's specific requirements", icon: "📦" },
+  const steps = [
+    { number: 1, title: "Collecting", description: "Handpicked at peak ripeness from Isparta's finest orchards.", image: "/zbieranie _collecting-process.webp", alt: "Hand picking apples in orchard" },
+    { number: 2, title: "Sorting", description: "Advanced optical sorting checks size, color and quality.", image: "/sortingprocess.webp", alt: "Apple sorting process on conveyor" },
+    { number: 3, title: "Packaging", description: "Export-grade packaging designed for safe global transport.", image: "/packagingprocess.webp", alt: "Apple packaging in boxes" },
+    { number: 4, title: "Cold Storage", description: "Stored at 0-2°C to preserve quality for months.", image: "/cold_storageprocess.webp", alt: "Apples stored in cold storage" },
   ];
 
   return (
-    <section id="preparation" className="relative pt-12 sm:pt-16 pb-24 sm:pb-32 bg-white overflow-hidden">
-      {/* Background accent */}
-      <div className="absolute -left-40 top-1/2 -translate-y-1/2 w-80 h-[600px] bg-gradient-to-r from-brand-green-light to-transparent rounded-r-full opacity-60" />
-
+    <section id="preparation" className="relative py-16 sm:py-24 bg-white overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-8">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
-            How we prepare Turkish apples for you?
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            How We Prepare Turkish Apples
           </h2>
+          <p className="text-gray-500 text-lg max-w-3xl mx-auto">
+            From orchard to box — every step is controlled to deliver consistent quality and freshness in every shipment.
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Text Content */}
-          <div>
-            <p className="text-gray-600 leading-relaxed text-lg mb-8">
-              We treat every apple like it matters — because it does. Before
-              anything leaves our facility, it goes through a careful,
-              multi-step process that we&apos;ve refined over years of working
-              with wholesalers around the world. Our team personally oversees
-              each stage, from the moment the fruit is picked to the final
-              box being sealed. It&apos;s the kind of attention to detail that
-              our partners count on, shipment after shipment.
-            </p>
-            <div className="space-y-4">
-              {features.map((item, idx) => (
-                <div
-                  key={idx}
-                  className="group flex items-start gap-4 p-3 -mx-3 rounded-2xl hover:bg-brand-green-light/50 transition-all duration-300"
-                >
-                  <span className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-brand-green-light to-white rounded-xl flex items-center justify-center text-lg shadow-sm group-hover:scale-110 transition-transform duration-300">
-                    {item.icon}
-                  </span>
-                  <span className="text-gray-700 pt-2 font-medium">{item.text}</span>
-                </div>
-              ))}
+        {/* 4 Step Cards Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {steps.map((step) => (
+            <div key={step.number} className="group bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              {/* Image */}
+              <div className="relative rounded-xl overflow-hidden bg-gray-100 aspect-[4/3] mb-4">
+                <img
+                  src={step.image}
+                  alt={step.alt}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              {/* Content */}
+              <div className="flex items-center gap-3 mb-2">
+                <span className="flex-shrink-0 w-7 h-7 bg-emerald-500 text-white rounded-full flex items-center justify-center text-sm font-semibold">
+                  {step.number}
+                </span>
+                <h3 className="text-gray-900 font-semibold text-base">{step.title}</h3>
+              </div>
+              {/* Description */}
+              <p className="text-gray-500 text-sm leading-relaxed">
+                {step.description}
+              </p>
             </div>
-          </div>
-
-          {/* Masonry Image Grid */}
-          <div className="grid grid-cols-2 gap-4">
-            <div className="space-y-4">
-              <div className="rounded-3xl overflow-hidden aspect-[3/4] bg-gradient-to-br from-gray-100 to-gray-200 shadow-lg group">
-                <img
-                  src="/packaging-1.webp"
-                  alt="Apple packing process"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-              <div className="rounded-3xl overflow-hidden aspect-square bg-gradient-to-br from-gray-100 to-gray-200 shadow-lg group">
-                <img
-                  src="/packaging-5.webp"
-                  alt="Export-grade carton assembly"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-            </div>
-            <div className="space-y-4 pt-10">
-              <div className="rounded-3xl overflow-hidden aspect-square bg-gradient-to-br from-gray-100 to-gray-200 shadow-lg group">
-                <img
-                  src="/packaging-6.webp"
-                  alt="Quality control inspection"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-              <div className="rounded-3xl overflow-hidden aspect-[3/4] bg-gradient-to-br from-gray-100 to-gray-200 shadow-lg group">
-                <img
-                  src="/packaging-4.webp"
-                  alt="Packed apples in cold storage"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

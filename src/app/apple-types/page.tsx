@@ -338,10 +338,10 @@ export default function AppleTypesPage() {
               </div>
               {/* Right — Image Grid */}
               <div className="grid grid-cols-2 gap-4">
-                <img src="/packaging-2.webp" alt="Export packaging" className="w-full h-48 object-cover rounded-xl" />
-                <img src="/packaging-3.webp" alt="Palletizing" className="w-full h-48 object-cover rounded-xl" />
-                <img src="/packaging-4.webp" alt="Cold storage" className="w-full h-48 object-cover rounded-xl" />
-                <img src="/packaging-5.webp" alt="Shipping" className="w-full h-48 object-cover rounded-xl" />
+                <img src="/transportpodappletypes.webp" alt="Transport containers for apples" className="w-full h-48 object-cover rounded-xl" />
+                <img src="/truck-applestypes.webp" alt="Truck transport logistics" className="w-full h-48 object-cover rounded-xl" />
+                <img src="/warehousephoto.webp" alt="Cold storage warehouse" className="w-full h-48 object-cover rounded-xl" />
+                <img src="/pallete.webp" alt="Apple pallets ready for export" className="w-full h-48 object-cover rounded-xl" />
               </div>
             </div>
           </div>

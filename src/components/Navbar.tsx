@@ -28,8 +28,8 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-18">
-          {/* Logo */}
-          <a href="/" className="group">
+          {/* Logo - aligned with hero content */}
+          <a href="/" className="group -ml-4 sm:-ml-6 lg:-ml-8">
             <img src="/apples-from-turkey-logo.webp" alt="Apples from Turkey" width={383} height={160} className="h-16 object-contain" />
           </a>
 

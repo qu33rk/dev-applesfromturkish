@@ -88,8 +88,8 @@ export default function HeroSection() {
         <div className="absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-white via-white/40 to-transparent" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-[72px] pb-8">
-        <div className="max-w-xl lg:min-h-[480px] flex flex-col justify-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-[76px] pb-8">
+        <div className="max-w-xl lg:min-h-[480px] flex flex-col justify-start pt-4">
           {/* H1 */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-[1.1] mb-6">
             Apples from Turkey{" "}
