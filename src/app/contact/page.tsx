@@ -191,7 +191,7 @@ export default function ContactPage() {
                       </svg>
                     </span>
                     <div>
-                      <h3 className="font-semibold text-gray-900 mb-1">Fast Response Guarantee</h3>
+                      <span className="block font-semibold text-gray-900 mb-1">Fast Response Guarantee</span>
                       <p className="text-sm text-gray-600 leading-relaxed">
                         We reply to all inquiries within 24 hours. For urgent requests, call or WhatsApp us directly.
                       </p>
@@ -201,12 +201,12 @@ export default function ContactPage() {
 
                 {/* Export Info - below form */}
                 <div className="mt-6 bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
-                  <h3 className="font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                  <span className="block font-semibold text-gray-900 mb-3 flex items-center gap-2">
                     <svg className="w-5 h-5 text-brand-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
                     </svg>
                     Ready for Export
-                  </h3>
+                  </span>
                   <ul className="space-y-2 text-sm text-gray-600">
                     <li className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-brand-green"></span>

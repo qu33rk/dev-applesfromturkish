@@ -218,7 +218,7 @@ export default function AppleTypesPage() {
                     <img src={apple.image} alt={`${apple.name} apple`} className="w-[250%] h-[250%] object-contain" />
                   </div>
                   <div className="px-4 pb-4 pt-2">
-                    <h3 className="text-sm font-bold text-gray-900 mb-1">{apple.name}</h3>
+                    <span className="block text-sm font-bold text-gray-900 mb-1">{apple.name}</span>
                     <p className="text-xs text-gray-500 leading-relaxed mb-3">{apple.description}</p>
                     <div className="space-y-1 border-t border-gray-100 pt-2">
                       <div className="flex justify-between text-xs">
