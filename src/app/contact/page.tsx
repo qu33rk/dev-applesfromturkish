@@ -199,7 +199,7 @@ export default function ContactPage() {
                     <div>
                       <p className="font-medium text-gray-900">Address</p>
                       <p className="text-gray-500">
-                        XXX
+                        Region: Isparta, Turkey
                       </p>
                     </div>
                   </li>
@@ -224,10 +224,10 @@ export default function ContactPage() {
                     <div>
                       <p className="font-medium text-gray-900">Email</p>
                       <a
-                        href="mailto:hello@example.com"
+                        href="mailto:contact@applesfromturkey.com"
                         className="text-gray-500 hover:text-brand-green transition-colors"
                       >
-                        hello@example.com
+                        contact@applesfromturkey.com
                       </a>
                     </div>
                   </li>
@@ -265,7 +265,7 @@ export default function ContactPage() {
                   <span className="text-4xl block mb-2">🗺️</span>
                   <p className="text-sm">Map placeholder</p>
                   <p className="text-xs text-gray-300 mt-1">
-                    XXX
+                    Region: Isparta, Turkey
                   </p>
                 </div>
               </div>

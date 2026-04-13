@@ -51,7 +51,7 @@ export default function PrivacyPolicyPage() {
           <h2>1. Introduction</h2>
           <p>
             Apples from Turkey (&quot;Company&quot;, &quot;we&quot;,
-            &quot;us&quot;, or &quot;our&quot;), headquartered at XXX, is committed to protecting the
+            &quot;us&quot;, or &quot;our&quot;), headquartered in Isparta, Turkey, is committed to protecting the
             privacy of our business partners, clients, and website visitors. This
             Privacy Policy explains how we collect, use, store, and share your
             personal data when you interact with our website at
@@ -236,16 +236,14 @@ export default function PrivacyPolicyPage() {
           <ul>
             <li>
               <strong>Email:</strong>{" "}
-              <a href="mailto:hello@example.com">
-                hello@example.com
-              </a>
+              <a href="mailto:contact@applesfromturkey.com">contact@applesfromturkey.com</a>
             </li>
             <li>
               <strong>Phone:</strong>{" "}
               <a href="tel:+48517740099">+48 517 740 099</a>
             </li>
             <li>
-              <strong>Address:</strong> XXX
+              <strong>Address:</strong> Isparta, Turkey
             </li>
           </ul>
         </article>
