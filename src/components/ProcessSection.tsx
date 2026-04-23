@@ -1,10 +1,15 @@
+import Image from "next/image";
+
 export default function ProcessSection() {
   return (
     <section id="process" className="relative py-24 sm:py-32 overflow-hidden">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/Ispartaorchard.webp)' }}
+      <Image
+        src="/Ispartaorchard.webp"
+        alt=""
+        fill
+        sizes="100vw"
+        className="object-cover object-center -z-10"
       />
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/50" />

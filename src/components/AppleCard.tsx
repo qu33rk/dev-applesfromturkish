@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 interface AppleCardProps {
   name: string;
@@ -26,10 +27,12 @@ export default function AppleCard({
     <div className="group relative bg-white rounded-3xl overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-brand-green/10 border border-gray-100">
       {/* Image Carousel */}
       <div className={`relative aspect-square bg-gradient-to-br ${color} overflow-hidden`}>
-        <img
+        <Image
           src={images[currentIndex]}
           alt={`${name} apple`}
-          className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
+          fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
+          className="object-cover transition-all duration-700 group-hover:scale-110"
         />
 
         {/* Turkey Origin Badge */}

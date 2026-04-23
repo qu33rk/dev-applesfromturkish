@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import { whatsappUrl } from "@/config/contact";
 
 const links = [
@@ -31,7 +32,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-18">
           {/* Logo - aligned with hero content */}
           <a href="/" className="group -ml-4 sm:-ml-6 lg:-ml-8">
-            <img src="/apples-from-turkey-logo.webp" alt="Apples from Turkey" width={383} height={160} className="h-16 object-contain" />
+            <Image src="/apples-from-turkey-logo.webp" alt="Apples from Turkey" width={400} height={167} priority className="h-16 w-auto object-contain" />
           </a>
 
           {/* Desktop Links */}

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function PreparationSection() {
   const steps = [
     { number: 1, title: "Collecting", description: "Handpicked at peak ripeness from Isparta's finest orchards.", image: "/zbieranie _collecting-process.webp", alt: "Hand picking apples in orchard" },
@@ -25,10 +27,12 @@ export default function PreparationSection() {
             <div key={step.number} className="group bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
               {/* Image */}
               <div className="relative rounded-xl overflow-hidden bg-gray-100 aspect-[4/3] mb-4">
-                <img
+                <Image
                   src={step.image}
                   alt={step.alt}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               {/* Content */}

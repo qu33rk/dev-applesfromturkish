@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { contactConfig, telHref, mailtoHref, whatsappUrl } from "@/config/contact";
 
 const quickLinks = [
@@ -25,7 +26,7 @@ export default function Footer() {
             {/* Brand Column */}
             <div>
               <div className="mb-5">
-                <img src="/apples-from-turkey-logo.webp" alt="Apples from Turkey" width={383} height={160} className="h-20 object-contain" />
+                <Image src="/apples-from-turkey-logo.webp" alt="Apples from Turkey" width={400} height={167} className="h-20 w-auto object-contain" />
               </div>
               <p className="text-sm leading-relaxed text-white/70 mb-6">
                 Premium apple export company based in Turkey. Supplying the

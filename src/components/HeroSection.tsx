@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { whatsappUrl } from "@/config/contact";
 
 const stats = [
@@ -79,10 +80,14 @@ export default function HeroSection() {
 
       {/* Hero image — absolutely positioned to right edge of viewport */}
       <div className="absolute top-0 right-0 bottom-0 hidden lg:block w-[50%] z-0 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-        <img
+        <Image
           src="/hero-apples.webp"
           alt="Premium Turkish apples ready for export"
-          className="w-full h-full object-cover object-center"
+          fill
+          priority
+          fetchPriority="high"
+          sizes="50vw"
+          className="object-cover object-center"
         />
         {/* Gradient fade on left edge */}
         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/60 to-transparent w-[40%]" />
@@ -93,10 +98,14 @@ export default function HeroSection() {
       {/* Mobile Hero Image - shown only on mobile/tablet */}
       <div className="lg:hidden relative z-10 pt-[76px]">
         <div className="relative h-[280px] sm:h-[360px] overflow-hidden">
-          <img
+          <Image
             src="/hero-apples.webp"
             alt="Premium Turkish apples ready for export"
-            className="w-full h-full object-cover object-center"
+            fill
+            priority
+            fetchPriority="high"
+            sizes="100vw"
+            className="object-cover object-center"
           />
           {/* Gradient fade on bottom edge */}
           <div className="absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-white via-white/60 to-transparent" />

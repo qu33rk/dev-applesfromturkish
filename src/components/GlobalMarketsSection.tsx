@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const markets = [
   { flag: "🇮🇳", name: "India", desc: "We deliver apples for India's growing wholesale and retail sectors. Gala, Red and Fuji varieties with consistent quality and competitive pricing." },
   { flag: "🇮🇶", name: "Iraq", desc: "We supply apples for Iraq through established logistics routes with year-round availability and export-grade packaging." },
@@ -80,9 +82,13 @@ export default function GlobalMarketsSection() {
         <div className="relative rounded-3xl overflow-hidden">
           {/* Background Image Container */}
           <div className="relative h-[400px] sm:h-[500px]">
-            <div 
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-              style={{ backgroundImage: 'url(/Container-main.webp)' }}
+            <Image
+              src="/Container-main.webp"
+              alt=""
+              fill
+              sizes="100vw"
+              loading="lazy"
+              className="object-cover object-center"
             />
             {/* Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />

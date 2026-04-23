@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -154,18 +155,23 @@ export default function AppleTypesPage() {
         {/* ── Hero + Apple Cards (one flowing section) ── */}
         <section className="relative bg-gradient-to-br from-gray-50 via-white to-gray-50 pt-[72px] pb-12 overflow-hidden">
           {/* Hero image — extended far off-screen with mask fade */}
-          <div className="absolute top-0 -right-48 bottom-0 hidden lg:block w-[65%] z-0">
-            <div
-              className="w-full h-full"
-              style={{
-                backgroundImage: 'url(/apple-types-hero.webp)',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                maskImage: 'linear-gradient(to right, transparent 0%, black 30%, black 70%, transparent 100%), linear-gradient(to top, transparent 0%, black 15%, black 100%), linear-gradient(to bottom, transparent 0%, black 10%, black 100%)',
-                WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 30%, black 70%, transparent 100%), linear-gradient(to top, transparent 0%, black 15%, black 100%), linear-gradient(to bottom, transparent 0%, black 10%, black 100%)',
-                maskComposite: 'intersect',
-                WebkitMaskComposite: 'source-in'
-              }}
+          <div
+            className="absolute top-0 -right-48 bottom-0 hidden lg:block w-[65%] z-0"
+            style={{
+              maskImage: 'linear-gradient(to right, transparent 0%, black 30%, black 70%, transparent 100%), linear-gradient(to top, transparent 0%, black 15%, black 100%), linear-gradient(to bottom, transparent 0%, black 10%, black 100%)',
+              WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 30%, black 70%, transparent 100%), linear-gradient(to top, transparent 0%, black 15%, black 100%), linear-gradient(to bottom, transparent 0%, black 10%, black 100%)',
+              maskComposite: 'intersect',
+              WebkitMaskComposite: 'source-in',
+            }}
+          >
+            <Image
+              src="/apple-types-hero.webp"
+              alt=""
+              fill
+              priority
+              fetchPriority="high"
+              sizes="65vw"
+              className="object-cover object-center"
             />
           </div>
 
@@ -214,8 +220,14 @@ export default function AppleTypesPage() {
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mt-2">
               {appleVarieties.map((apple) => (
                 <div key={apple.slug} className="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
-                  <div className="aspect-[4/3] bg-gradient-to-b from-gray-50 to-white flex items-center justify-center overflow-hidden">
-                    <img src={apple.image} alt={`${apple.name} apple`} className="w-[250%] h-[250%] object-contain" />
+                  <div className="relative aspect-[4/3] bg-gradient-to-b from-gray-50 to-white flex items-center justify-center overflow-hidden">
+                    <Image
+                      src={apple.image}
+                      alt={`${apple.name} apple`}
+                      fill
+                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
+                      className="object-contain scale-[2.5]"
+                    />
                   </div>
                   <div className="px-4 pb-4 pt-2">
                     <span className="block text-sm font-bold text-gray-900 mb-1">{apple.name}</span>
@@ -338,10 +350,18 @@ export default function AppleTypesPage() {
               </div>
               {/* Right — Image Grid */}
               <div className="grid grid-cols-2 gap-4">
-                <img src="/transportpodappletypes.webp" alt="Transport containers for apples" className="w-full h-48 object-cover rounded-xl" />
-                <img src="/truck-applestypes.webp" alt="Truck transport logistics" className="w-full h-48 object-cover rounded-xl" />
-                <img src="/warehousephoto.webp" alt="Cold storage warehouse" className="w-full h-48 object-cover rounded-xl" />
-                <img src="/pallete.webp" alt="Apple pallets ready for export" className="w-full h-48 object-cover rounded-xl" />
+                <div className="relative h-48 rounded-xl overflow-hidden">
+                  <Image src="/transportpodappletypes.webp" alt="Transport containers for apples" fill sizes="(max-width: 1024px) 50vw, 25vw" className="object-cover" />
+                </div>
+                <div className="relative h-48 rounded-xl overflow-hidden">
+                  <Image src="/truck-applestypes.webp" alt="Truck transport logistics" fill sizes="(max-width: 1024px) 50vw, 25vw" className="object-cover" />
+                </div>
+                <div className="relative h-48 rounded-xl overflow-hidden">
+                  <Image src="/warehousephoto.webp" alt="Cold storage warehouse" fill sizes="(max-width: 1024px) 50vw, 25vw" className="object-cover" />
+                </div>
+                <div className="relative h-48 rounded-xl overflow-hidden">
+                  <Image src="/pallete.webp" alt="Apple pallets ready for export" fill sizes="(max-width: 1024px) 50vw, 25vw" className="object-cover" />
+                </div>
               </div>
             </div>
           </div>
